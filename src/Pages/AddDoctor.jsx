@@ -1,5 +1,45 @@
-
+import Swal from 'sweetalert2'
 const AddDoctor = () => {
+
+   const handleAddDoctor = (e) =>{
+    e.preventDefault();
+    const form = e.target;
+    const name = form.name.value;
+    const designation = form.designation.value;
+    const chamber = form.chamber.value;
+    const fee = form.fee.value;
+    const degree = form.degree.value;
+    const availability = form.availability.value;
+    const photo = form.photo.value;
+    const description = form.description.value;
+    const doctor = {name, designation, chamber, fee, degree, availability, photo, description}
+    // console.log(doctor)
+
+    fetch(`http://localhost:5000/doctors`,{
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(doctor)
+    })
+    .then(res=>res.json())
+    .then(data =>{
+        console.log(data);
+        if(data.acknowledged){
+            form.reset();
+            Swal.fire({
+                position: "top-center",
+                icon: "success",
+                title: "Doctor Added Successful!",
+                showConfirmButton: false,
+                timer: 1500
+              });
+        }
+    })
+
+   }
+
+
     return (
         <div >
         <div className="my-8 flex flex-col justify-center items-center ">
@@ -11,7 +51,7 @@ poverty – not marble floors and foundations. Martin H. Fischer (1879 –
 
 
          
-         <form className="bg-gradient-to-r from-green-500 to-orange-500 px-16 py-8 w-3/4 mx-auto rounded-md">
+         <form onSubmit={handleAddDoctor} className="bg-gradient-to-r from-green-500 to-orange-500 px-16 py-8 w-3/4 mx-auto rounded-md">
 
             <div className=" w-full flex">
                 <div className="w-1/2 p-4">
@@ -51,7 +91,7 @@ poverty – not marble floors and foundations. Martin H. Fischer (1879 –
             <div className=" w-full ">
                 <div className="w-full p-4">
                 <label className="font-semibold p-1 text-white">Photo</label>
-                <input type="text" name="name" placeholder="Enter photo url here" className="input input-bordered w-full " />
+                <input type="text" name="photo" placeholder="Enter photo url here" className="input input-bordered w-full " />
                 </div>
 
                 <div className="w-full p-4">
@@ -60,7 +100,7 @@ poverty – not marble floors and foundations. Martin H. Fischer (1879 –
                 </div> 
             </div>
 
-            <button type="button" className="w-full bg-red-600  hover:bg-white  hover:text-gray-600 text-white font-bold px-4 py-2 rounded-md">
+            <button type="submit" className="w-full bg-red-600 tracking-wider	  hover:bg-white  hover:text-gray-600 text-white font-bold px-4 py-2 rounded-md">
            ADD DOCTOR
            </button>
 
