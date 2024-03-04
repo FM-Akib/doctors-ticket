@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import logo from '../assets/Logo.png';
 
 
@@ -8,10 +9,10 @@ const Navbar = () => {
 	<div className="container flex justify-between h-16 mx-auto">
 		<ul className="items-stretch hidden space-x-3 lg:flex">
 			<li className="flex">
-				<a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 border-transparent text-amber-600 border-amber-600">Link</a>
+				<a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 border-transparent text-amber-600 border-amber-600">Appoinment</a>
 			</li>
 			<li className="flex">
-				<a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">Link</a>
+				<Link to="/addDoctors" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">Add+</Link>
 			</li>
 			<li className="flex">
 				<a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">Link</a>
