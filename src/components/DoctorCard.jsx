@@ -1,4 +1,6 @@
-
+import { FaEye } from "react-icons/fa";
+import { FaSquarePen } from "react-icons/fa6";
+import { MdDeleteOutline } from "react-icons/md";
 const DoctorCard = ({doctor}) => {
     const {name,designation, chamber, fee, degree, availability, photo, description} =  doctor;
     return (
@@ -32,9 +34,9 @@ const DoctorCard = ({doctor}) => {
 
 
         <div className="flex flex-col">
-            <button className="btn">x</button>
-            <button className="btn">x</button>
-            <button className="btn">x</button>
+            <button className="btn bg-white border-none"><FaEye /></button>
+            <button className="btn bg-white border-none"><FaSquarePen /></button>
+            <button className="btn bg-white border-none"><MdDeleteOutline /></button>
         </div>
         </div>
         
