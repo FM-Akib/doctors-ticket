@@ -12,29 +12,29 @@ const Partners = () => {
     return (
         <>
         <h1 className="text-orange-500 bg-[#F3F4F6] text-center text-2xl font-bold leadi sm:text-2xl p-2">Partners Hospital</h1>
-       <Marquee className="h-24 bg-white">
-               <div className="h-20 p-2 mr-12">
+       <Marquee className="h-28 bg-white">
+               <div className="h-20 p-3 mr-12">
                 <img className="h-full" src={h1} alt=""/>
                </div>
-               <div className="h-20 p-2 mr-12">
+               <div className="h-20 p-3 mr-12">
                 <img className="h-full" src={h2} alt=""/>
                </div>
-               <div className="h-20 p-2 mr-12">
+               <div className="h-20 p-3 mr-12">
                 <img className="h-full" src={h3} alt=""/>
                </div>
-               <div className="h-20 p-2 mr-12">
+               <div className="h-20 p-3 mr-12">
                 <img className="h-full" src={h4} alt=""/>
                </div>
-               <div className="h-20 p-2 mr-12">
+               <div className="h-20 p-3 mr-12">
                 <img className="h-full" src={h5} alt=""/>
                </div>
-               <div className="h-20 p-2 mr-12">
+               <div className="h-20 p-3 mr-12">
                 <img className="h-full" src={h6} alt=""/>
                </div>
-               <div className="h-20 p-2 mr-12">
+               <div className="h-20 p-3 mr-12">
                 <img className="h-full" src={h7} alt=""/>
                </div>
-               <div className="h-20 p-2 mr-12">
+               <div className="h-20 p-3 mr-12">
                 <img className="h-full" src={h8} alt=""/>
                </div>
        </Marquee>
