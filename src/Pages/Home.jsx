@@ -18,6 +18,8 @@ const Home = () => {
                     ></DoctorCard>)
                 }
             </div>
+
+            
         </div>
     );
 };

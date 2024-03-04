@@ -11,7 +11,7 @@ import h8 from '../assets/hospitsLogo/h8.png'
 const Partners = () => {
     return (
         <>
-        <h1 className="text-orange-500 bg-[#F3F4F6] text-center text-2xl font-bold leadi sm:text-2xl p-2">Partners Hospital</h1>
+        <h1 className="text-orange-500 bg-[#F3F4F6] text-center text-2xl font-bold  sm:text-3xl p-2 font-Madimi tracking-wider	">Hospital Partners </h1>
        <Marquee className="h-28 bg-white">
                <div className="h-20 p-3 mr-12">
                 <img className="h-full" src={h1} alt=""/>

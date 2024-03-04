@@ -18,9 +18,9 @@ const Navbar = () => {
 				<a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">Link</a>
 			</li>
 		</ul>
-		<a rel="noopener noreferrer" href="#" aria-label="Back to homepage" className="flex items-center ">
+		<Link to="/" aria-label="Back to homepage" className="flex items-center ">
 			<img className="h-full" src={logo}/>
-		</a>
+		</Link>
 		<div className="flex items-center md:space-x-4">
 			<div className="relative">
 				<span className="absolute inset-y-0 left-0 flex items-center pl-2">
