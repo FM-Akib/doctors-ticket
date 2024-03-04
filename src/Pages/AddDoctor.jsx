@@ -51,7 +51,7 @@ poverty – not marble floors and foundations. Martin H. Fischer (1879 –
 
 
          
-         <form onSubmit={handleAddDoctor} className="bg-gradient-to-r from-green-500 to-orange-500 px-16 py-8 w-3/4 mx-auto rounded-md">
+         <form onSubmit={handleAddDoctor} className="bg-gradient-to-r from-green-500 to-orange-500 px-16 py-8 mb-6 w-3/4 mx-auto rounded-md">
 
             <div className=" w-full flex">
                 <div className="w-1/2 p-4">
