@@ -32,7 +32,10 @@ const Navbar = () => {
 				</span>
 				<input type="search" name="Search" placeholder="Search..." className="w-32 py-2 pl-10 text-sm rounded-md sm:w-auto focus:outline-none bg-gray-100 text-gray-800 focus:bg-gray-50" />
 			</div>
+
+			<Link to="/login">
 			<button type="button" className="hidden px-6 py-2 font-semibold rounded lg:block bg-amber-600 text-gray-50">Log in</button>
+			</Link>
 		</div>
 		<button title="Open menu" type="button" className="p-4 lg:hidden">
 			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6 text-gray-800">
