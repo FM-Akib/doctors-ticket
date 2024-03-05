@@ -5,7 +5,7 @@ import DoctorCard from "../components/DoctorCard";
 
 const Home = () => {
     const doctors = useLoaderData();
-    console.log(doctors)
+    
     return (
         <div>
             <Hero></Hero>

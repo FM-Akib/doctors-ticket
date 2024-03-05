@@ -1,8 +1,14 @@
 import { Link } from 'react-router-dom';
 import logo from '../assets/Logo.png';
+import { useContext } from 'react';
+import { AuthContext } from '../Authentication/Authprovider';
 
 
 const Navbar = () => {
+
+	const {user,logOut}=useContext(AuthContext);
+
+
     return (
         <>
         <header className="p-4 bg-gray-100 text-gray-800">
@@ -33,9 +39,35 @@ const Navbar = () => {
 				<input type="search" name="Search" placeholder="Search..." className="w-32 py-2 pl-10 text-sm rounded-md sm:w-auto focus:outline-none bg-gray-100 text-gray-800 focus:bg-gray-50" />
 			</div>
 
+        <div>
+		{
+			user ? <div className="flex items-center">
+			<div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar mr-1">
+        <div className="w-10 rounded-full">
+          <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+        </div>
+        </div>
+              
+			<Link to="/">
+			<button onClick={logOut} type="button" className="hidden px-6 py-2 font-semibold rounded lg:block bg-amber-600 text-gray-50">Log out</button>
+			</Link>
+			
+			</div>:<>
+			
 			<Link to="/login">
 			<button type="button" className="hidden px-6 py-2 font-semibold rounded lg:block bg-amber-600 text-gray-50">Log in</button>
 			</Link>
+			</>
+		}	
+		</div>    
+        
+              
+			
+
+
+
+
+
 		</div>
 		<button title="Open menu" type="button" className="p-4 lg:hidden">
 			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6 text-gray-800">
