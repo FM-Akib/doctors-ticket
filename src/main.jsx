@@ -9,6 +9,8 @@ import Layout from './Layout/Layout';
 import Home from './Pages/Home';
 import AddDoctor from './Pages/AddDoctor';
 import DoctorDetails from './Pages/DoctorDetails';
+import Login from './Pages/Login';
+import Signup from './Pages/Signup';
 
 const router = createBrowserRouter([
   {
@@ -28,7 +30,15 @@ const router = createBrowserRouter([
         path: "doctorDetails/:id",
         element: <DoctorDetails></DoctorDetails>,
         loader: ({params})=> fetch(`http://localhost:5000/doctors/${params.id}`)
-      }
+      },
+      {
+        path: "login",
+        element: <Login></Login>
+      },
+      {
+        path: "signup",
+        element: <Signup></Signup>
+      },
     ]
   },
 ]);

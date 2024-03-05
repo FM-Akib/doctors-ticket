@@ -14,42 +14,42 @@ const Footer = () => {
                     </a>
                 </div>
                 <div className="col-span-6 text-center md:text-left md:col-span-3">
-                    <p className="pb-1 text-lg font-medium">Category</p>
+                    <p className="pb-1 text-lg font-medium">Services</p>
                     <ul>
                         <li>
-                            <a rel="noopener noreferrer" href="#" className="hover:text-rose-600">Link</a>
+                            <a rel="noopener noreferrer" href="#" className="hover:text-rose-600">Video Consultency</a>
                         </li>
                         <li>
-                            <a rel="noopener noreferrer" href="#" className="hover:text-rose-600">Link</a>
+                            <a rel="noopener noreferrer" href="#" className="hover:text-rose-600">Chamber Appointment</a>
                         </li>
                         <li>
-                            <a rel="noopener noreferrer" href="#" className="hover:text-rose-600">Link</a>
+                            <a rel="noopener noreferrer" href="#" className="hover:text-rose-600">Doctor at home</a>
                         </li>
                         <li>
-                            <a rel="noopener noreferrer" href="#" className="hover:text-rose-600">Link</a>
+                            <a rel="noopener noreferrer" href="#" className="hover:text-rose-600">Ambulance Service</a>
                         </li>
                         <li>
-                            <a rel="noopener noreferrer" href="#" className="hover:text-rose-600">Link</a>
+                            <a rel="noopener noreferrer" href="#" className="hover:text-rose-600">Domiciliary Service</a>
                         </li>
                     </ul>
                 </div>
                 <div className="col-span-6 text-center md:text-left md:col-span-3">
-                    <p className="pb-1 text-lg font-medium">Category</p>
+                    <p className="pb-1 text-lg font-medium">Doctors</p>
                     <ul>
                         <li>
-                            <a rel="noopener noreferrer" href="#" className="hover:text-rose-600">Link</a>
+                            <a rel="noopener noreferrer" href="#" className="hover:text-rose-600">Medicine</a>
                         </li>
                         <li>
-                            <a rel="noopener noreferrer" href="#" className="hover:text-rose-600">Link</a>
+                            <a rel="noopener noreferrer" href="#" className="hover:text-rose-600">Gynecologist</a>
                         </li>
                         <li>
-                            <a rel="noopener noreferrer" href="#" className="hover:text-rose-600">Link</a>
+                            <a rel="noopener noreferrer" href="#" className="hover:text-rose-600">Cardiologist</a>
                         </li>
                         <li>
-                            <a rel="noopener noreferrer" href="#" className="hover:text-rose-600">Link</a>
+                            <a rel="noopener noreferrer" href="#" className="hover:text-rose-600">Pediatrician</a>
                         </li>
                         <li>
-                            <a rel="noopener noreferrer" href="#" className="hover:text-rose-600">Link</a>
+                            <a rel="noopener noreferrer" href="#" className="hover:text-rose-600">Seurgeon</a>
                         </li>
                     </ul>
                 </div>
