@@ -1,4 +1,5 @@
 import Swal from 'sweetalert2'
+import '../App.css'
 const AddDoctor = () => {
 
    const handleAddDoctor = (e) =>{
@@ -37,6 +38,7 @@ const AddDoctor = () => {
         }
     })
 
+    
    }
 
 
@@ -51,7 +53,7 @@ poverty – not marble floors and foundations. Martin H. Fischer (1879 –
 
 
          
-         <form onSubmit={handleAddDoctor} className="bg-gradient-to-r from-green-500 to-orange-500 px-16 py-8 mb-6 w-3/4 mx-auto rounded-md">
+         <form onSubmit={handleAddDoctor} className="form-bg bg-cover object-bottom px-16 py-8 mb-6 w-3/4 mx-auto rounded-md">
 
             <div className=" w-full flex">
                 <div className="w-1/2 p-4">
@@ -96,7 +98,7 @@ poverty – not marble floors and foundations. Martin H. Fischer (1879 –
 
                 <div className="w-full p-4">
                 <label className="font-semibold p-1 text-white">Description</label>
-                <textarea type="textarea" name="description" placeholder="Enter description here" className="input input-bordered w-full " />
+                <textarea type="textarea" name="description" placeholder="Enter description here" className="input input-bordered w-full min-h-32 " />
                 </div> 
             </div>
 

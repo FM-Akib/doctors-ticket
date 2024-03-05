@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import loginimg from '../assets/login.png';
 import { useContext } from 'react';
 import { AuthContext } from '../Authentication/Authprovider';
@@ -34,7 +34,6 @@ const Login = () => {
             
         <div className="col-span-2 bg-gray-50 mx-auto">
             <img className="w-auto h-auto" src={loginimg} alt=""/>
-           
         </div>
 
 
@@ -42,7 +41,7 @@ const Login = () => {
         <div className="mx-auto col-span-2 w-full max-w-lg p-4 rounded-md  sm:p-8 bg-gray-50 text-gray-800">
 	<h2 className="mb-3 text-2xl font-semibold text-center">Signin to your account</h2>
 	<p className="text-sm text-center text-green-600">Don't have account?
-		<a href="#" rel="noopener noreferrer" className="focus:underline hover:underline">Signup here</a>
+		<Link to="/signup" rel="noopener noreferrer" className="focus:underline hover:underline">Signup here</Link>
 	</p>
 	<div className="my-6 space-y-4">
 		<button onClick={handleGooglelogin} aria-label="Login with Google" type="button" className="flex items-center justify-center w-full p-4 space-x-4 border rounded-md hover:bg-orange-500 hover:text-white focus:ri focus:ri border-gray-600 focus:ri">

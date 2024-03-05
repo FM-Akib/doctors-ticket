@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import signimg from '../assets/signup.png';
 import { AuthContext } from '../Authentication/Authprovider';
+import { Link } from 'react-router-dom';
 
 
 
@@ -30,7 +31,7 @@ const Signup = () => {
         <div className="mx-auto col-span-2 w-full max-w-lg p-4 rounded-md  sm:p-8 bg-gray-50 text-gray-800">
 	<h2 className="mb-3 text-2xl font-semibold text-center">Signup to your account</h2>
 	<p className="text-sm text-center text-green-600">Already have account?
-		<a href="#" rel="noopener noreferrer" className="focus:underline hover:underline">Sign in here</a>
+		<Link to="/login" rel="noopener noreferrer" className="focus:underline hover:underline">Sign in here</Link>
 	</p>
 	<div className="my-6 space-y-4">
 		<button onClick={handleGoogleLogin} aria-label="Login with Google" type="button" className="flex items-center justify-center w-full p-4 space-x-4 border rounded-md hover:bg-orange-500 hover:text-white focus:ri focus:ri border-gray-600 focus:ri">
