@@ -18,7 +18,7 @@ const Appointment = () => {
         // const doctor = {name, designation, chamber, fee, degree, availability, photo, description}
         // // console.log(doctor)
     
-        // fetch(`http://localhost:5000/doctors`,{
+        // fetch(`https://doctors-ticket-backend-3jio7tjoo-motimiya08.vercel.app//doctors`,{
         //     method: 'POST',
         //     headers: {
         //         'Content-Type': 'application/json'
