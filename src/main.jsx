@@ -12,6 +12,7 @@ import DoctorDetails from './Pages/DoctorDetails';
 import Login from './Pages/Login';
 import Signup from './Pages/Signup';
 import Authprovider from './Authentication/Authprovider';
+import Appointment from './Pages/Appointment';
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: "signup",
         element: <Signup></Signup>
+      },
+      {
+        path: "appointment",
+        element: <Appointment></Appointment>
       },
     ]
   },

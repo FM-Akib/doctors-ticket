@@ -13,7 +13,7 @@ const Hero = () => {
                     <br  className="hidden md:inline lg:hidden" />We have kept everything organised for you.
                 </p>
                 <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-                    <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold rounded bg-amber-600 text-gray-50">Appoinment</a>
+                    <Link to="/appointment" className="px-8 py-3 text-lg font-semibold rounded bg-amber-600 text-gray-50">Appoinment</Link>
                     <Link to="/signup" className="px-8 py-3 text-lg font-semibold border rounded border-gray-800">Sign Up</Link>
                 </div>
             </div>
