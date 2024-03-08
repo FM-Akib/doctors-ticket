@@ -1,43 +1,44 @@
 import Swal from 'sweetalert2'
+import '../App.css'
 
 const Appointment = () => {
 
 
     const handleAddDoctor = (e) =>{
-        e.preventDefault();
-        const form = e.target;
-        const name = form.name.value;
-        const designation = form.designation.value;
-        const chamber = form.chamber.value;
-        const fee = form.fee.value;
-        const degree = form.degree.value;
-        const availability = form.availability.value;
-        const photo = form.photo.value;
-        const description = form.description.value;
-        const doctor = {name, designation, chamber, fee, degree, availability, photo, description}
-        // console.log(doctor)
+        // e.preventDefault();
+        // const form = e.target;
+        // const name = form.name.value;
+        // const designation = form.designation.value;
+        // const chamber = form.chamber.value;
+        // const fee = form.fee.value;
+        // const degree = form.degree.value;
+        // const availability = form.availability.value;
+        // const photo = form.photo.value;
+        // const description = form.description.value;
+        // const doctor = {name, designation, chamber, fee, degree, availability, photo, description}
+        // // console.log(doctor)
     
-        fetch(`http://localhost:5000/doctors`,{
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(doctor)
-        })
-        .then(res=>res.json())
-        .then(data =>{
-            console.log(data);
-            if(data.acknowledged){
-                form.reset();
-                Swal.fire({
-                    position: "top-center",
-                    icon: "success",
-                    title: "Doctor Added Successful!",
-                    showConfirmButton: false,
-                    timer: 1500
-                  });
-            }
-        })
+        // fetch(`http://localhost:5000/doctors`,{
+        //     method: 'POST',
+        //     headers: {
+        //         'Content-Type': 'application/json'
+        //     },
+        //     body: JSON.stringify(doctor)
+        // })
+        // .then(res=>res.json())
+        // .then(data =>{
+        //     console.log(data);
+        //     if(data.acknowledged){
+        //         form.reset();
+        //         Swal.fire({
+        //             position: "top-center",
+        //             icon: "success",
+        //             title: "Doctor Added Successful!",
+        //             showConfirmButton: false,
+        //             timer: 1500
+        //           });
+        //     }
+        // })
     
         
        }
@@ -52,59 +53,67 @@ const Appointment = () => {
 
 
          
-         <form onSubmit={handleAddDoctor} className="form-bg bg-cover object-bottom px-16 py-8 mb-6 w-3/4 mx-auto rounded-md">
+         <form onSubmit={handleAddDoctor} className="form-bg-appointment bg-cover object-bottom px-16 py-8 mb-6 w-3/4 mx-auto rounded-md">
 
             <div className=" w-full flex">
                 <div className="w-1/2 p-4">
-                <label className="font-semibold p-1 text-white">Name</label>
+                <label className="font-semibold p-1 text-gray-600">Patient Name</label>
                 <input type="text" name="name" placeholder="Enter name here" className="input input-bordered w-full " />
                 </div>
 
                 <div className="w-1/2 p-4">
-                <label className="font-semibold p-1 text-white">Designation</label>
-                <input type="text" name="designation" placeholder="Enter designation here" className="input input-bordered w-full " />
+                <label className="font-semibold p-1 text-gray-600">Age</label>
+                <input type="text" name="designation" placeholder="Enter age here" className="input input-bordered w-full " />
                 </div> 
             </div>
 
             <div className=" w-full flex">
-                <div className="w-1/2 p-4">
-                <label className="font-semibold p-1 text-white">Chamber</label>
-                <input type="text" name="chamber" placeholder="Enter chamber here" className="input input-bordered w-full " />
+
+            <div className="w-1/2 p-4">
+                <label className="font-semibold p-1 text-gray-600">Complain</label>
+                <input type="text" name="fee" placeholder="Write complain here" className="input input-bordered w-full " />
+                </div> 
+
+                <div className="w-1/2 p-4 flex items-center ">
+                <label className="font-semibold p-1 text-gray-600 mr-4">Gender</label>
+                <div className="flex items-center">
+                <div className="flex items-center mr-6 text-gray-600">
+                <input type="radio" name="radio-4" className="radio radio-accent mr-1" checked />Male
+                </div>
+                <div className="flex items-center text-gray-600">
+                <input type="radio" name="radio-4" className="radio radio-accent mr-1" />Female
+                </div>
                 </div>
 
-                <div className="w-1/2 p-4">
-                <label className="font-semibold p-1 text-white">Appointment fee</label>
-                <input type="text" name="fee" placeholder="Enter fee here" className="input input-bordered w-full " />
-                </div> 
+                </div>
+                
             </div>
 
             <div className=" w-full flex">
                 <div className="w-1/2 p-4">
-                <label className="font-semibold p-1 text-white">Degree</label>
-                <input type="text" name="degree" placeholder="Enter degree here" className="input input-bordered w-full " />
+                <label className="font-semibold p-1 text-gray-600">Mobile</label>
+                <input type="text" name="degree" placeholder="Enter mobile here" className="input input-bordered w-full " />
                 </div>
 
-                <div className="w-1/2 p-4">
-                <label className="font-semibold p-1 text-white">Availability</label>
-                <input type="text" name="availability" placeholder="Enter availability here" className="input input-bordered w-full " />
-                </div> 
-            </div>
-            <div className=" w-full ">
-                <div className="w-full p-4">
-                <label className="font-semibold p-1 text-white">Photo</label>
-                <input type="text" name="photo" placeholder="Enter photo url here" className="input input-bordered w-full " />
+                <div className="w-1/2 p-4 flex items-center ">
+                <label className="font-semibold p-1 text-gray-600 mr-4">Fee</label>
+                <div className="flex items-center">
+                <div className="flex items-center mr-6 text-gray-600">
+                <input type="radio" name="radio-4" className="radio radio-accent mr-1" checked />Due
+                </div>
+                <div className="flex items-center text-gray-600">
+                <input type="radio" name="radio-4" className="radio radio-accent mr-1" />Paid
+                </div>
                 </div>
 
-                <div className="w-full p-4">
-                <label className="font-semibold p-1 text-white">Description</label>
-                <textarea type="textarea" name="description" placeholder="Enter description here" className="input input-bordered w-full min-h-32 " />
-                </div> 
+                </div>
             </div>
-
-            <button type="submit" className="w-full bg-red-600 tracking-wider	  hover:bg-white  hover:text-gray-600 text-white font-bold px-4 py-2 rounded-md">
-           ADD DOCTOR
+          
+            <div className="flex justify-center items-center">
+            <button type="submit" className="w-2/6  bg-red-600 tracking-wider 	  hover:bg-white  hover:text-gray-600 text-white font-bold px-4 py-2 rounded-md">
+           Book Appointment
            </button>
-
+           </div>
 
          </form>
 

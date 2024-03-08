@@ -1,3 +1,7 @@
 .form-bg{
     background-image: url('./assets/formBack.png'); 
 }
+.form-bg-appointment{
+    background-image: url('./assets/formAppointment.png'); 
+
+}
