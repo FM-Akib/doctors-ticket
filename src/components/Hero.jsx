@@ -6,7 +6,7 @@ const Hero = () => {
         <section className="bg-gray-100 text-gray-800">
         <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
             <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
-                <h1 className="text-5xl font-bold leadi sm:text-6xl">Book your
+                <h1 className="text-2xl font-bold leadi sm:text-6xl">Book your
                     <span className="text-amber-600 ml-1">Doctors Appointment </span>
                 </h1>
                 <p className="mt-6 mb-8 text-lg sm:mb-12">Find your doctor easily with a minimum of effort. 
