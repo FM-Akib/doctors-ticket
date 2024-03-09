@@ -2,6 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import Hero from "../components/Hero";
 import Partners from "../components/Partners";
 import DoctorCard from "../components/DoctorCard";
+import Hospitals from "../components/Hospitals";
 
 const Home = () => {
     const doctors = useLoaderData();
@@ -18,6 +19,11 @@ const Home = () => {
                     ></DoctorCard>)
                 }
             </div>
+            
+            <div className="bg-gray-100">
+            <Hospitals></Hospitals>
+            </div>
+            
 
             
         </div>
