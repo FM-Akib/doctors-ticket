@@ -14,7 +14,7 @@ const DoctorCard = ({doctor}) => {
     return (
         <>
     <div className="rounded-md grid grid-col-3 shadow-md p-8 sm:flex sm:space-x-6 bg-white text-gray-800">
-	<div className="col-span-1 flex-shrink-0 w-full  mb-6 lg:h-44 sm:h-32 sm:mb-0">
+	<div className="col-span-1 flex-shrink-0 w-28  mb-6 h-44 sm:h-32 sm:mb-0">
 		<img src={photo} alt="" className="object-cover object-center w-full h-full rounded bg-gray-200" />
 	</div>
 
