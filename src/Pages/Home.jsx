@@ -11,7 +11,7 @@ const Home = () => {
             <Hero></Hero>
             <Partners></Partners>
 
-            <div className="bg-gray-100 px-16 py-8 grid grid-cols-2 justify-center items-center gap-4 mx-auto">
+            <div className="bg-gray-100 px-16 py-8 grid lg:grid-cols-2 justify-center items-center gap-4 mx-auto">
                 {
                     doctors.map(adoctor=> <DoctorCard key={adoctor._id}
                     doctor={adoctor}

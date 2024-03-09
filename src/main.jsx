@@ -22,7 +22,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: ()=> fetch('https://doctors-ticket-backend-r3es9eekq-motimiya08.vercel.app/doctors') 
+        loader: ()=> fetch('http://localhost:5000/doctors') 
       },
       {
         path: "addDoctors",
@@ -31,7 +31,7 @@ const router = createBrowserRouter([
       {
         path: "doctorDetails/:id",
         element: <DoctorDetails></DoctorDetails>,
-        loader: ({params})=> fetch(`https://doctors-ticket-backend-r3es9eekq-motimiya08.vercel.app/doctors/${params.id}`)
+        loader: ({params})=> fetch(`http://localhost:5000/doctors/${params.id}`)
       },
       {
         path: "login",
