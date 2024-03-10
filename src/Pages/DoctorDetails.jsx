@@ -54,8 +54,8 @@ const DoctorDetails = () => {
                 </div>
             </div>
             <div>
-                <div className="-mr-24 rounded-lg md:rounded-l-full bg-gradient-to-br from-gray-900 to-black h-96">
-                    <img className="bg-cover" src={photo}/>
+                <div className="-mr-24 flex justify-center items-center rounded-lg md:rounded-l-full bg-gradient-to-br from-gray-300 to-gray h-96">
+                    <img className="bg-cover h-44  rounded-full" src={photo}/>
                 </div>
             </div>
         </div>
