@@ -5,40 +5,40 @@ const Appointment = () => {
 
 
     const handleAddDoctor = (e) =>{
-        // e.preventDefault();
-        // const form = e.target;
-        // const name = form.name.value;
-        // const designation = form.designation.value;
-        // const chamber = form.chamber.value;
-        // const fee = form.fee.value;
-        // const degree = form.degree.value;
-        // const availability = form.availability.value;
-        // const photo = form.photo.value;
-        // const description = form.description.value;
-        // const doctor = {name, designation, chamber, fee, degree, availability, photo, description}
-        // // console.log(doctor)
+        e.preventDefault();
+        const form = e.target;
+        const name = form.name.value;
+        const designation = form.designation.value;
+        const chamber = form.chamber.value;
+        const fee = form.fee.value;
+        const degree = form.degree.value;
+        const availability = form.availability.value;
+        const photo = form.photo.value;
+        const description = form.description.value;
+        const doctor = {name, designation, chamber, fee, degree, availability, photo, description}
+        // console.log(doctor)
     
-        // fetch(`https://doctors-ticket-backend-3jio7tjoo-motimiya08.vercel.app//doctors`,{
-        //     method: 'POST',
-        //     headers: {
-        //         'Content-Type': 'application/json'
-        //     },
-        //     body: JSON.stringify(doctor)
-        // })
-        // .then(res=>res.json())
-        // .then(data =>{
-        //     console.log(data);
-        //     if(data.acknowledged){
-        //         form.reset();
-        //         Swal.fire({
-        //             position: "top-center",
-        //             icon: "success",
-        //             title: "Doctor Added Successful!",
-        //             showConfirmButton: false,
-        //             timer: 1500
-        //           });
-        //     }
-        // })
+        fetch(`https://doctors-ticket-backend-kqk5bdkca-motimiya08.vercel.app/doctors`,{
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(doctor)
+        })
+        .then(res=>res.json())
+        .then(data =>{
+            console.log(data);
+            if(data.acknowledged){
+                form.reset();
+                Swal.fire({
+                    position: "top-center",
+                    icon: "success",
+                    title: "Doctor Added Successful!",
+                    showConfirmButton: false,
+                    timer: 1500
+                  });
+            }
+        })
     
         
        }
