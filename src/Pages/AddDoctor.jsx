@@ -17,6 +17,7 @@ const AddDoctor = () => {
     // console.log(doctor)
 
     fetch(`https://doctors-ticket-backend-kqk5bdkca-motimiya08.vercel.app/doctors`,{
+        mode: 'no-cors',
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
